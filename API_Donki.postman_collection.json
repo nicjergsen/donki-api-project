@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "6b3c3fd3-e3eb-4327-ab58-0041d7722612",
+		"name": "API Donki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12640942"
+	},
+	"item": [
+		{
+			"name": "GetInstruments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/instruments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"instruments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetInstrumentActivity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/instrument-activity?instrument=\"SOHO:%LASCO/C2\"",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"instrument-activity"
+					],
+					"query": [
+						{
+							"key": "instrument",
+							"value": "\"SOHO:%LASCO/C2\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetInstrumentsUsage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/instruments/usage",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"instruments",
+						"usage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetActivities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/activities",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
